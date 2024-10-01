@@ -1,41 +1,58 @@
-nav {
-    background-color: steelblue;
-    padding: 10px;
+:root {
+    --text-padding: 10px;
+    --box-width: 15rem;
+    --heading-color: steelblue;
+    --box-border: 1px solid;
 }
+
+nav {
+    background-color: var(--heading-color);
+    padding: var(--text-padding);
+}
+
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--text-padding);
 }
+
 h1 {
-    color: steelblue;
+    color: var(--heading-color);
 }
+
 main {
     max-width: 800px;
 }
+
 main img {
+    float:right;
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: var(--box-border) var(--heading-color);
     padding: 2px;
+    margin: 5px;
     box-shadow: 0 0 30px gray;
 }
+
 p {
-    padding: 0;
+    padding: var(--text-padding);
 }
+
 aside{
-    width: 20rem;
+    width: var(--box-width);
     margin: 1rem;
-    border: 2px solid rgba(0,0,0,0.2);
-    padding: 1rem;
+    border: var(--box-border) rgba(0,0,0,0.2);
+    padding: var(--text-padding);
     background-color: #efe;
     color: #333;
     text-align: center;
 }
+
 aside img {
     width: 200px;
     height: auto;
 }
+
 footer {
     margin-top: 20px;
     border-top: 1px dashed rgba(0,0,0,1);
