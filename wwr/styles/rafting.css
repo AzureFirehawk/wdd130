@@ -80,14 +80,14 @@ p {
 .hero article {
     background-color: rgba(07, 52, 78, 0.6);
     position: absolute;
-    left: 150px;
+    left: 145px;
     width: 500px;
-    top: 245px;
+    top: 250px;
 }
 
 .hero h1 {
     position: absolute;
-    top: 180px;
+    top: 190px;
     left: 230px
 }
 .hero img {
