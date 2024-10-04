@@ -31,20 +31,17 @@ header{
     background-color:var(--accent-2);
     color:var(--accent-1);
     max-width: 800px;
-    margin: var(--page-margin)
 }
 
 main {
     max-width: 800px;
     background-color: var(--accent-1);
-    margin: var(--page-margin);
 }
 
 footer p {
     color: var(--primary-color);
     /* background-color: var(--accent-1); */
     margin-top: 5px;
-    margin-left: var(--page-margin);
 }
 
 h1 {
@@ -60,6 +57,7 @@ h2 {
     font-family: "Barlow Semi Condensed", system-ui;
     font-weight: 500;
     font-style: normal;
+    margin-left: 5px;
 }
 
 p {
@@ -69,6 +67,7 @@ p {
     font-weight: 400;
     font-style: normal;
     font-variation-settings:"slnt" 0;
+    margin-left: 5px;
 }
 
 
@@ -88,7 +87,7 @@ p {
 
 .hero h1 {
     position: absolute;
-    top: 180px;
+    top: 170px;
     left: 230px
 }
 .hero img {
