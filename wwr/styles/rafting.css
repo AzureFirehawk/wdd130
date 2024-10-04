@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #075278;
+    --secondary-color: #fb8500;
+    --accent-1: #219ebc;
+    --accent-2: #ffc430;
+    --page-margin: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 800px;
+}
+
+a:link { 
+    text-decoration: none; 
+}
+
+a:visited { 
+    text-decoration: none;
+}
+
+a:hover { 
+    text-decoration: none; 
+}
+
+a:active { 
+    text-decoration: none; 
+} 
+
+header{
+    background-color:var(--accent-2);
+    color:var(--accent-1);
+    max-width: 800px;
+    margin: var(--page-margin)
+}
+
+main {
+    max-width: 800px;
+    background-color: var(--accent-1);
+    margin: var(--page-margin);
+}
+
+footer p {
+    color: var(--primary-color);
+    /* background-color: var(--accent-1); */
+    margin-top: 5px;
+    margin-left: var(--page-margin);
+}
+
+h1 {
+    color: var(--secondary-color);
+    font-family: "Barlow Semi Condensed", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-family: "Barlow Semi Condensed", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p {
+    color:var(--accent-2);
+    font-family: "Afacad Flux", system-ui;
+    /* font-optical-sizing: auto; */
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+
+
+/* class selectors */
+
+.hero div {
+    position: relative;
+}
+
+.hero article {
+    background-color: rgba(07, 52, 78, 0.6);
+    position: absolute;
+    left: 150px;
+    width: 500px;
+    top: 240px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 180px;
+    left: 230px
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    width: 200px;
+    float:right;
+}
+
+.sociallinks img {
+    width: 50px;
+}
