@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #075278;
-    --secondary-color: #fb8500;
+    --primary-color: #0C4655;
+    --secondary-color: #FF9E2F;
     --accent-1: #219ebc;
-    --accent-2: #ffc430;
+    --accent-2: #FFD56B;
     --page-margin: 20px;
 }
 
@@ -20,7 +20,7 @@ header{
 
 main {
     /* max-width: 800px; */
-    background-color: var(--accent-1);
+    background-color: var(--primary-color);
     margin-bottom: 10px;
 }
 
