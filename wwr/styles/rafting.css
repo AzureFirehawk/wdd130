@@ -95,6 +95,7 @@ legend {
     padding: 0.5rem;
     color: var(--secondary-color);
     font-size: 1.3em;
+    text-align: center;
 }
 
 label, input,button,textarea {
@@ -180,7 +181,7 @@ textarea {
     place-items: center;
 }
 
-.history img {
+.history img, .employees img {
     max-height: 175px;
 }
 
@@ -194,8 +195,8 @@ textarea {
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-.adventure img, .employees img {
-    max-width: 125px;
+.adventure img {
+    max-width: 130px;
 }
 
 .form-flex{
