@@ -21,7 +21,7 @@ header{
 main {
     /* max-width: 800px; */
     background-color: var(--primary-color);
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 nav a {
@@ -40,22 +40,23 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 10px;
+}
+
+h1,h2,legend{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: var(--secondary-color);
+    font-family: "Barlow Semi Condensed", system-ui;
+    font-style: normal;
+    text-align: center;
 }
 
 h1 {
-    color: var(--secondary-color);
-    font-family: "Barlow Semi Condensed", system-ui;
     font-weight: 600;
-    font-style: normal;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h2 {
-    color: var(--secondary-color);
-    font-family: "Barlow Semi Condensed", system-ui;
     font-weight: 500;
-    font-style: normal;
-    margin-left: 5px;
 }
 
 figcaption {
@@ -72,6 +73,54 @@ p {
     margin-left: 5px;
 }
 
+form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    background-color: #7c808a;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 0.75rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 1.3em;
+}
+
+label, input,button,textarea {
+    font-family: "Afacad Flux", system-ui;
+}
+
+label {
+    padding-right: 1rem;
+    color: var(--accent-2);
+}
+
+input,textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+textarea {
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
 
 /* class selectors */
 
@@ -84,13 +133,14 @@ p {
     position: absolute;
     left: 145px;
     width: 500px;
-    top: 250px;
+    top: 230px;
+    text-align: center;
 }
 
 .hero h1 {
     position: absolute;
-    top: 190px;
-    left: 230px
+    top: 165px;
+    left: 250px
 }
 .hero img {
     display: block;
@@ -98,7 +148,7 @@ p {
     height: auto;
 }
 
-.hero article img {
+.hero article img, .hero article iframe {
     width: 200px;
     float:right;
 }
@@ -106,7 +156,6 @@ p {
 .sociallinks img {
     width: 50px;
 }
-
 
 .headgrid {
     display: grid;
@@ -126,7 +175,7 @@ p {
     place-items: center;
 }
 
-.history {
+.history, .employees {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
 }
@@ -135,18 +184,35 @@ p {
     max-height: 175px;
 }
 
-.history h2 {
+.history h2, .employees h2, .adventure h2 {
     grid-column: 1/6;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .adventure{
-    grid-template-columns: 20% 20% 20% 20% 20% ;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-.adventure img {
+.adventure img, .employees img {
     max-width: 125px;
 }
 
-.adventure h2{
-    grid-column: 1/6;
+.form-flex{
+    display:flex;
+    justify-content: space-between;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+  
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+  
+.column2 {
+    grid-template-columns: auto;
 }
