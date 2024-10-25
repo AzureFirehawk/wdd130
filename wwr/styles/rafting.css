@@ -3,12 +3,14 @@
     --secondary-color: #FF9E2F;
     --accent-1: #219ebc;
     --accent-2: #FFD56B;
+    --accent-3: #1E2628;
     --page-margin: 20px;
 }
 
 * {
     box-sizing: border-box;
     max-width: 800px;
+    text-align: center;
 }
 
 
@@ -29,9 +31,28 @@ nav a {
     padding: 10px;
 }
 
+table {
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+th,td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    font-size: 1.2em;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody > tr:nth-of-type(even),thead {
+    background-color: var(--primary-color);
+}
+
 footer p {
     color: var(--primary-color);
-    /* background-color: var(--accent-1); */
     margin-top: 5px;
     align-self: center;
 }
@@ -43,15 +64,17 @@ footer {
     margin-top: 10px;
 }
 
-h1,h2,legend{
+h1,h2,h3,legend,th{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: var(--secondary-color);
     font-family: "Barlow Semi Condensed", system-ui;
     font-style: normal;
-    text-align: center;
 }
 
-h1 {
+h1,h2,h3,legend,th{
+    color: #FF9E2F;
+}
+
+h1,th {
     font-weight: 600;
 }
 
@@ -59,18 +82,16 @@ h2 {
     font-weight: 500;
 }
 
-figcaption {
-    color: var(--accent-2);
-}
-
-p {
-    color:var(--accent-2);
+p,figcaption,td {
     font-family: "Afacad Flux", system-ui;
-    /* font-optical-sizing: auto; */
     font-weight: 400;
     font-style: normal;
     font-variation-settings:"slnt" 0;
     margin-left: 5px;
+}
+
+p,figcaption, td {
+    color:var(--accent-2);
 }
 
 form {
@@ -139,10 +160,10 @@ textarea {
 }
 
 .hero h1 {
-    position: absolute;
-    top: 165px;
-    left: 250px
+    position: relative;
+    bottom:225px;
 }
+
 .hero img {
     display: block;
     width: 100%;
@@ -176,26 +197,34 @@ textarea {
     place-items: center;
 }
 
-.history, .employees {
+.history, .employees, .display {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
 }
 
-.history img, .employees img {
-    max-height: 175px;
+.display {
+    margin-top: 30px;
+}
+
+.history {
+    margin: 0px 60px 40px;
+}
+
+.history img, .employees img, .triptypes img {
+    max-height: 200px;
 }
 
 .history h2, .employees h2, .adventure h2 {
     grid-column: 1/6;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
-.adventure{
+.adventure {
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-.adventure img {
+.adventure img, .display img {
     max-width: 130px;
 }
 
@@ -216,4 +245,20 @@ textarea {
   
 .column2 {
     grid-template-columns: auto;
+}
+
+.triplist div,.triptable,th,td{
+    margin: 5px 10px 10px;
+    border:1px solid rgba(255,158,47,0.3);
+    padding: 1rem;
+}
+
+.triplist div, .triptable{
+    background-color: #1E2628;
+}
+
+.triptypes {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
 }
